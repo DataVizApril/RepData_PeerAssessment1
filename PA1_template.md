@@ -144,6 +144,6 @@ week_p <- ggplot(intervel_steps, aes(x = interval, y = steps,color = dayType)) +
 ggplotly(week_p)
 ```
 
-![plot of chunk unnamed-chunk-7](instructions_fig/plot3.png) 
+![plot of chunk unnamed-chunk-7](instructions_fig/plot4.png) 
 
 
