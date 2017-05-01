@@ -63,6 +63,13 @@ mean(filled_totalSteps$steps)
 median(filled_totalSteps$steps)
 
 ```
+Mean is the same as the previous value. Median values are higher after imputing missing data. 
+The reason isthat in the original data, there are some days with `steps` values `NA` for 
+any `interval`. 
+The total number of steps taken in such days are set to 0s by
+default. However, after replacing missing `steps` values with the mean `steps`
+of associated `interval` value, these 0 values are removed from the histogram
+of total number of steps taken each day.
 
 ```{r activity_pattern weekdays&weekends}
 #Create a new factor variable in the dataset with two levels -- "weekday" and "weekend" indicating whether a given date is a weekday or weekend day.
